@@ -1,0 +1,115 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z020clg400-1",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1"
+    },
+    "design_tree": {
+      "two_bit_adder_0": ""
+    },
+    "ports": {
+      "A0_0": {
+        "direction": "I"
+      },
+      "A1_0": {
+        "direction": "I"
+      },
+      "B0_0": {
+        "direction": "I"
+      },
+      "B1_0": {
+        "direction": "I"
+      },
+      "S0_0": {
+        "direction": "O"
+      },
+      "S1_0": {
+        "direction": "O"
+      },
+      "S2_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "two_bit_adder_0": {
+        "vlnv": "xilinx.com:module_ref:two_bit_adder:1.0",
+        "xci_name": "design_1_two_bit_adder_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "two_bit_adder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A0": {
+            "direction": "I"
+          },
+          "A1": {
+            "direction": "I"
+          },
+          "B0": {
+            "direction": "I"
+          },
+          "B1": {
+            "direction": "I"
+          },
+          "S0": {
+            "direction": "O"
+          },
+          "S1": {
+            "direction": "O"
+          },
+          "S2": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "A0_0_1": {
+        "ports": [
+          "A0_0",
+          "two_bit_adder_0/A0"
+        ]
+      },
+      "A1_0_1": {
+        "ports": [
+          "A1_0",
+          "two_bit_adder_0/A1"
+        ]
+      },
+      "B0_0_1": {
+        "ports": [
+          "B0_0",
+          "two_bit_adder_0/B0"
+        ]
+      },
+      "B1_0_1": {
+        "ports": [
+          "B1_0",
+          "two_bit_adder_0/B1"
+        ]
+      },
+      "two_bit_adder_0_S0": {
+        "ports": [
+          "two_bit_adder_0/S0",
+          "S0_0"
+        ]
+      },
+      "two_bit_adder_0_S1": {
+        "ports": [
+          "two_bit_adder_0/S1",
+          "S1_0"
+        ]
+      },
+      "two_bit_adder_0_S2": {
+        "ports": [
+          "two_bit_adder_0/S2",
+          "S2_0"
+        ]
+      }
+    }
+  }
+}
